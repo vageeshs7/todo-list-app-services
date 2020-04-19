@@ -2,11 +2,7 @@
   "kind": "Service",
   "apiVersion": "v1",
   "metadata": {
-    "name": "vash-rabbit-mq",
-    "namespace": "default",
-    "labels": {
-      "k8s-app": "vash-rabbit-mq"
-    }
+    "name": "vash-rabbit-mq"
   },
   "spec": {
     "ports": [
@@ -27,17 +23,6 @@
     "selector": {
       "k8s-app": "vash-rabbit-mq"
     },
-    "type": "LoadBalancer",
-    "sessionAffinity": "None",
-    "externalTrafficPolicy": "Cluster"
-  },
-  "status": {
-    "loadBalancer": {
-      "ingress": [
-        {
-          "hostname": "localhost"
-        }
-      ]
-    }
+    "type": "LoadBalancer"
   }
 }

@@ -1,15 +1,12 @@
 {
   "kind": "Deployment",
-  "apiVersion": "extensions/v1beta1",
+  "apiVersion": "v1",
   "metadata": {
     "name": "vash-rabbit-mq",
     "namespace": "default",
     
     "labels": {
       "k8s-app": "vash-rabbit-mq"
-    },
-    "annotations": {
-      "deployment.kubernetes.io/revision": "7"
     }
   },
   "spec": {
